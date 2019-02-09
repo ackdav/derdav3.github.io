@@ -1,12 +1,2 @@
-{% if site.analytics.provider and page.analytics != false %}
-
-{% case site.analytics.provider %}
-{% when "google" %}
-  {% include /analytics-providers/google.html %}
-{% when "google-universal" %}
-  {% include /analytics-providers/google-universal.html %}
-{% when "custom" %}
-  {% include /analytics-providers/custom.html %}
-{% endcase %}
-
-{% endif %}
+<!-- Here you can add your Google Analytics Tracking code. If you do so, do not
+forget to set the include_analytics attribute to true on the _config.yml file -->
